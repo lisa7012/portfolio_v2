@@ -1,0 +1,166 @@
+nav {
+    margin-top: 3.13rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Cormorant Garamond', sans-serif;
+}
+
+nav a {
+    text-decoration-line: none;
+}
+
+/* Frame animation for the brand*/
+.brand {
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    color: var(--headerColor);
+    margin-left: 6.25rem;
+    padding: 0.3rem 0.8rem;
+    text-decoration: underline;
+}
+
+.brand:after,
+.brand:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid transparent;
+    transition: all 0.5s;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.brand:after {
+    top: -2px;
+    left: -2px;
+    border-top: 0px solid transparent;
+    border-left: 0px solid transparent;
+}
+
+.brand:before {
+    bottom: -2px;
+    right: -2px;
+    border-bottom: 0px solid transparent;
+    border-right: 0px solid transparent;
+}
+
+.brand:hover:before,
+.brand:hover:after {
+    width: 100%;
+    height: 100%;
+}
+
+.brand:hover:after {
+    top: 0px;
+    left: 0px;
+    border-top: 3px solid var(--primaryColor);
+    border-left: 3px solid var(--primaryColor);
+}
+
+.brand:hover:before {
+    bottom: 0px;
+    right: 0px;
+    border-bottom: 3px solid var(--primaryColor);
+    border-right: 3px solid var(--primaryColor);
+}
+
+/* Style for menu links*/
+nav li {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 4.56rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    color: var(--headerColor);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    text-decoration: none;
+    padding-left: 1.69rem;
+    padding-right: 1.69rem;
+    padding-bottom: 0.3rem;
+}
+
+/* Underline animation for menu links*/
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all 0.5s;
+}
+
+nav ul li a:hover {
+    color: var(--headerColor);
+}
+
+nav.underline ul li a {
+    position: relative;
+}
+
+nav.underline ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: var(--primaryColor);
+    height: 3px;
+}
+
+nav.underline ul li a:hover:after {
+    width: 70%;
+}
+
+.menu {
+    font-size: 1.5rem;
+    color: var(--headerColor);
+    position: absolute;
+    top: 3.13rem;
+    right: 6.25rem;
+    display: none;
+}
+
+@media only screen and (max-width: 769px) {
+    .menu {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    nav ul {
+        /* display: none; */
+        flex-direction: column;
+        /* width: 100%; */
+        margin-bottom: 0.5rem;
+        justify-content: flex-start;
+        position: fixed;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+}
