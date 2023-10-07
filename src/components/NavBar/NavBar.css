@@ -10,7 +10,7 @@ nav a {
     text-decoration-line: none;
 }
 
-/* Frame animation for the brand*/
+/* Frame transition for the brand*/
 .brand {
     cursor: pointer;
     position: relative;
@@ -98,7 +98,7 @@ nav ul li a {
     padding-bottom: 0.3rem;
 }
 
-/* Underline animation for menu links*/
+/* Underline transition for menu links*/
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
@@ -130,37 +130,102 @@ nav.underline ul li a:hover:after {
     width: 70%;
 }
 
-.menu {
-    font-size: 1.5rem;
-    color: var(--headerColor);
+/* Styling for hamburger menu and transitions*/
+nav .menu {
     position: absolute;
     top: 3.13rem;
     right: 6.25rem;
     display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1rem;
+    width: 1.5rem;
+    padding: 0.3rem 0.8rem;
 }
 
-@media only screen and (max-width: 769px) {
-    .menu {
+nav .menu span {
+    height: 0.11rem;
+    width: 100%;
+    background-color: var(--headerColor);
+    transition: transform 0.3s ease-in-out;
+}
+
+nav .menu span#line-1 {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(0, 0.22rem) rotate(45deg);
+}
+
+nav .menu span#line-2 {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(0, -0.22em) rotate(-45deg);
+}
+
+nav .menu span#line-3 {
+    visibility: hidden;
+}
+
+/* Styling for tablet*/
+@media only screen and (max-width: 768px) {
+    nav .menu {
         display: flex;
     }
 
     nav {
         flex-direction: column;
-        align-items: flex-start;
-        
+        align-items: start;
     }
 
     nav ul {
-        /* display: none; */
+        display: flex;
         flex-direction: column;
-        /* width: 100%; */
-        margin-bottom: 0.5rem;
-        justify-content: flex-start;
-        position: fixed;
+        align-items: center;
+        padding-left: 0rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav ul.menu-clicked {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: var(--mainBgcolor);
+        transition: all 0.5s ease-in-out;
+        opacity: 1;
+        visibility: visible;
+        border-bottom: 1px solid var(--mainBgcolor);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        /* box-shadow: 0px 6px 6px 0px #e4dacc; */
+        box-shadow: 0px 6px 6px 0px rgba(233, 196, 177, 0.58);
     }
 
     nav ul li {
         width: 100%;
         text-align: center;
+    }
+
+    nav ul li a{
+        margin: 0.8rem 0.8rem;
+    }
+
+    nav.underline ul li a:hover:after {
+        width: 7rem;
+    }
+}
+
+/* Styling for mobile*/
+@media only screen and (max-width: 540px) {
+    .brand {
+        margin-left: 1.25rem;
+    }
+
+    nav .menu {
+        right: 1.25rem;
+        transition: 0.5s ease-in-out;
     }
 }
