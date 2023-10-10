@@ -6,7 +6,7 @@ const NavBar = () => {
 
   return (
     <nav className="underline">
-      <a href="#">
+      <a href="/">
         <span className="brand">Lisa.</span>
       </a>
       <div
