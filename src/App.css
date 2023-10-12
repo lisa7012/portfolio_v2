@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Unna&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@400;500&display=swap');
 
 :root {
     --headerColor: #5F493E;
@@ -11,6 +12,7 @@
     --buttonShadowColor: #b9b0a480;
     --rectangleShadowColor: #b9b0a433;
     --buttonHoverColor: #8cd7d2a6;
+    --dottedUnderlineColor2: #fff;
 }
 
 html {
@@ -21,13 +23,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Unna, serif;
     background-color: var(--backgroundColor);
 }
 
 .App .a-body {
-    margin-top: clamp(0rem, 3.1785rem + 2.4513vw, 6.12rem);
-    margin-left: clamp(1.25rem, -2.8783rem + 12.2319vw, 11.8rem);
-    margin-right: clamp(1.25rem, -2.8783rem + 12.2319vw, 11.8rem);
+    margin-top: clamp(2rem, 1.0492rem + 4.2256vw, 6.12rem);
+    margin-left: clamp(1.25rem, -1.9231rem + 14.1026vw, 15rem);
+    margin-right: clamp(1.25rem, -1.9231rem + 14.1026vw, 15rem);
 }
 
 h1 {
@@ -37,6 +40,17 @@ h1 {
     font-style: normal;
     font-weight: 600;
     line-height: 100%;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: var(--textColor);
+    font-family: 'Alegreya SC', serif;
+    font-size: clamp(1.25rem, 1.1923rem + 0.2564vw, 1.5rem);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    margin-bottom: 0;
 }
 
 p {
@@ -46,6 +60,7 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
+    margin-bottom: 0;
 }
 
 button {
@@ -61,15 +76,42 @@ button {
 
     /*Typography*/
     color: var(--textColor);
-    font-family: Cormorant Garamond;
+    font-family: 'Alegreya SC', serif;
     font-size: 1.25rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.875rem;
     font-variant: all-small-caps;
+    letter-spacing: 0.05rem;
 }
 
 button:hover {
     background: var(--buttonHoverColor);
     transition: 0.2s;
+}
+
+a {
+    color: var(--textColor);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline #fff;
+}
+
+.dotted,
+.dotted:after,
+.dotted:before {
+    margin: 0;
+    transition: all 0.5s linear;
+    text-decoration: underline dotted transparent;
+}
+
+.dotted-1:hover {
+    text-decoration-color: var(--secondaryColor);
+}
+
+.dotted-2:hover {
+    text-decoration-color: var(--dottedUnderlineColor2);
 }

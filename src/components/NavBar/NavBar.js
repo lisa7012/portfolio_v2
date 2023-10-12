@@ -1,13 +1,13 @@
 import "./NavBar.css";
 import { useState } from "react";
 
-const NavBar = () => {
+const NavBar = ({ name }) => {
   const [isMenuClicked, setIsMenuClicked] = useState(false);
 
   return (
     <nav className="underline">
       <a href="/">
-        <span className="brand">Lisa.</span>
+        <span className="brand">{name}.</span>
       </a>
       <div
         className="menu"
@@ -21,13 +21,13 @@ const NavBar = () => {
       </div>
       <ul className={isMenuClicked ? "menu-clicked" : ""}>
         <li>
-          <a href="#">About Me</a>
+          <a href="/#about-me">About Me</a>
         </li>
         <li>
-          <a href="#">Projects</a>
+          <a href="/#projects">Projects</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="/#contact">Contact</a>
         </li>
       </ul>
     </nav>
