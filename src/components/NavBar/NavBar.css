@@ -107,6 +107,7 @@ nav ul li a:before {
 
 nav ul li a:hover {
     color: var(--headerColor);
+    text-decoration: none;
 }
 
 nav.underline ul li a {

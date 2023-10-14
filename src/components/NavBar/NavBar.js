@@ -1,33 +1,33 @@
-import "./NavBar.css";
-import { useState } from "react";
+import './NavBar.css';
+import { useState } from 'react';
 
 const NavBar = ({ name }) => {
   const [isMenuClicked, setIsMenuClicked] = useState(false);
 
   return (
-    <nav className="underline">
-      <a href="/">
-        <span className="brand">{name}.</span>
+    <nav className='underline'>
+      <a href='/'>
+        <span className='brand'>{name}.</span>
       </a>
       <div
-        className="menu"
+        className='menu'
         onClick={() => {
           setIsMenuClicked(!isMenuClicked);
         }}
       >
-        <span id={isMenuClicked ? "line-1" : ""}></span>
-        <span id={isMenuClicked ? "line-2" : ""}></span>
-        <span id={isMenuClicked ? "line-3" : ""}></span>
+        <span id={isMenuClicked ? 'line-1' : ''}></span>
+        <span id={isMenuClicked ? 'line-2' : ''}></span>
+        <span id={isMenuClicked ? 'line-3' : ''}></span>
       </div>
-      <ul className={isMenuClicked ? "menu-clicked" : ""}>
+      <ul className={isMenuClicked ? 'menu-clicked' : ''}>
         <li>
-          <a href="/#about-me">About Me</a>
+          <a href='/#about-me'>About Me</a>
         </li>
         <li>
-          <a href="/#projects">Projects</a>
+          <a href='/#projects'>Projects</a>
         </li>
         <li>
-          <a href="/#contact">Contact</a>
+          <a href='/#contact'>Contact</a>
         </li>
       </ul>
     </nav>

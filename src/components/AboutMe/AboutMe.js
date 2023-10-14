@@ -1,24 +1,22 @@
-import "./AboutMe.css";
-import AboutMeSvg from "../../assets/illustrations/about_me.svg";
+import './AboutMe.css';
+import AboutMeSvg from '../../assets/illustrations/about_me.svg';
 
 const AboutMe = ({ aboutMePara1, aboutMePara2, workplaces, technologies }) => {
   const formattedWorkplace = (workplace, link) => {
     return (
-      <a href={link} target="_blank" rel="noreferrer">
+      <a href={link} target='_blank' rel='noreferrer'>
         {workplace}
       </a>
     );
   };
 
   return (
-    <div className="about-me-container">
-      <div className="am-about-me-img">
-        <img src={AboutMeSvg} alt="about-me avg" />
+    <div id='about-me' className='about-me-container'>
+      <div className='am-about-me-img'>
+        <img src={AboutMeSvg} alt='about-me avg' />
       </div>
-      <div className="am-content">
-        <h1 id="about-me" className="dotted dotted-2">
-          About Me
-        </h1>
+      <div className='am-content'>
+        <h1 className='dotted dotted-2'>About Me</h1>
         <p>{aboutMePara1}</p>
         <p>
           {aboutMePara2.pieces[0]}

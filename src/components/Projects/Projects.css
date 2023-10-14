@@ -1,0 +1,103 @@
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: clamp(3rem, 2.5385rem + 2.0513vw, 5rem);
+    border: 1px solid transparent;
+    border-radius: 1.5625rem;
+    background: var(--primaryColor);
+    box-shadow: 0px 0px 15px 0px var(--rectangleShadowColor);
+    margin-top: clamp(3rem, 2.3077rem + 3.0769vw, 6rem);
+    padding: clamp(2.5rem, 2.3846rem + 0.5128vw, 3rem) clamp(1.25rem, 0.1538rem + 4.8718vw, 6rem);
+
+}
+
+.p-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding: clamp(0rem, -0.4615rem + 2.0513vw, 2rem) 0;
+}
+
+.projects-container .p-header h1 {
+    color: var(--textColor);
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: fit-content;
+}
+
+.projects-container .p-header a {
+    text-decoration: none;
+    align-self: center;
+}
+
+.projects-container .p-header button {
+    justify-content: space-between;
+    gap: 0.62rem;
+
+    font-family: Cormorant Garamond;
+    font-size: clamp(1.125rem, 1.0673rem + 0.2564vw, 1.375rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    font-variant: none;
+    letter-spacing: normal;
+    padding: 0.8rem;
+}
+
+#github-icon {
+    width: clamp(1.75rem, 1.5769rem + 0.7692vw, 2.5rem);
+    height: clamp(1.75rem, 1.5769rem + 0.7692vw, 2.5rem);
+}
+
+.projects-container .p-slider {
+    width: 100%;
+    margin-bottom: clamp(0rem, -1.1538rem + 5.1282vw, 5rem);
+}
+
+/* Styling for the slider */
+.slick-slide>div {
+    margin: 0 clamp(1rem, 0.7692rem + 1.0256vw, 2rem);
+}
+
+.slick-list {
+    margin: 0 -10px;
+}
+
+ul.slick-dots {
+    bottom: -3.125rem;
+}
+
+.slick-dots li button {
+    box-shadow: none;
+}
+
+.slick-arrow {
+    font-variant: none;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .slick-next {
+        right: -0.938rem !important;
+    }
+    
+    .slick-prev {
+        left: -0.938rem !important;
+    }
+
+    ul.slick-dots {
+        bottom: -1.875rem;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+    .projects-container .p-header button {
+        margin-top: 2rem;
+    } 
+}
