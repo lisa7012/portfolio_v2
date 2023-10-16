@@ -8,7 +8,6 @@
     border-radius: 1.5625rem;
     background: var(--primaryColor);
     box-shadow: 0px 0px 15px 0px var(--rectangleShadowColor);
-    /* margin-top: clamp(3rem, 2.3077rem + 3.0769vw, 6rem); */
     padding: clamp(2.5rem, 2.3846rem + 0.5128vw, 3rem) clamp(1.25rem, 0.1538rem + 4.8718vw, 6rem);
     scroll-margin-block-start: clamp(3rem, 2.0769rem + 4.1026vw, 7rem);
     scroll-margin-block-end: clamp(3rem, 2.0769rem + 4.1026vw, 7rem);
@@ -95,7 +94,7 @@ ul.slick-dots {
     }
 }
 
-@media only screen and (max-width: 385px) {
+@media only screen and (max-width: 370px) {
     .projects-container .p-header button {
         margin-top: 2rem;
     } 

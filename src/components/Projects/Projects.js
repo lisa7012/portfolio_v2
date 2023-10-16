@@ -51,6 +51,7 @@ const Projects = ({ projects, github }) => {
         <Slider {...settings}>
           {projects.map((project) => (
             <Card
+              key={project.id}
               name={project.name}
               description={project.description}
               tech={project.tech}

@@ -22,7 +22,11 @@ function App() {
         <Projects projects={data.projects} github={data.socials[0]} />
         <Contact socials={data.socials} />
       </div>
-      <Footer figma={''} github={''} fullName={data.fullName} />
+      <Footer
+        figma={data.projects[6].figma}
+        github={data.projects[6].link}
+        fullName={data.fullName}
+      />
     </div>
   );
 }

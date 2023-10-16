@@ -34,18 +34,6 @@
     align-self: center;
 }
 
-.home-container img,
-.home-container img:before,
-.home-container img:after { 
-    width: 100%;
-    height: 100%;
-    transition: all 0.2s linear;
-}
-
-.home-container img:hover {
-    transform: scale(1.02);
-}
-
 .arrow-down {
     display: flex;
     font-size: 1.7rem;

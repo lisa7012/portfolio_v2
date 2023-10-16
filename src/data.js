@@ -87,6 +87,15 @@ const data = {
       tech: 'Kotlin • XML',
       link: 'https://github.com/LLA-panic/panic-button',
     },
+    {
+      id: 7,
+      name: 'This Portfolio',
+      description:
+        'My small personal portfolio that I designed using Figma and coded in React and CSS.',
+      tech: 'React • CSS',
+      link: 'https://github.com/lisa7012/portfolio_v2',
+      figma: '',
+    },
   ],
 
   // Contact - Socials
@@ -103,10 +112,6 @@ const data = {
     {
       name: 'LinkedIn',
       link: 'https://www.linkedin.com/in/lisa-duong-763b33203/',
-    },
-    {
-      name: 'Figma',
-      link: '',
     },
   ],
 };

@@ -204,8 +204,7 @@ nav .menu span#line-3 {
         border-bottom: 1px solid var(--backgroundColor);
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
-        /* box-shadow: 0px 6px 6px 0px rgb(228, 218, 204); */
-        box-shadow: 0px 6px 6px 0px #e9c4b194;
+        box-shadow: 0px 6px 6px 0px var(--menuShadowColor);
     }
 
     nav ul li {

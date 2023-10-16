@@ -10,6 +10,7 @@
     --primaryColor: #E9C4B1;
     --secondaryColor: #8CD7D2;
     
+    --menuShadowColor: #e9c4b194;
     --buttonShadowColor: #b9b0a480;
     --rectangleShadowColor: #b9b0a433;
     --buttonHoverColor: #8cd7d2a6;
@@ -108,6 +109,17 @@ a:hover {
     text-decoration: underline var(--underlineColor2);
 }
 
+img, img:before, img:after {
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s linear;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+/* Title Hover Underlining */
 .dotted,
 .dotted:after,
 .dotted:before {
