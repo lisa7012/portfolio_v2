@@ -13,7 +13,7 @@ const AboutMe = ({ aboutMePara1, aboutMePara2, workplaces, technologies }) => {
   return (
     <div id='about-me' className='about-me-container'>
       <div className='am-about-me-img'>
-        <img src={AboutMeSvg} alt='about-me avg' />
+        <img src={AboutMeSvg} alt='about-me svg' />
       </div>
       <div className='am-content'>
         <h1 className='dotted dotted-2'>About Me</h1>

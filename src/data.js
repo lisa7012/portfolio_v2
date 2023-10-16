@@ -1,6 +1,7 @@
-const content = {
+const data = {
   // Home
   name: 'Lisa',
+  fullName: 'Lisa Duong',
   intro:
     "I'm a recent graduate and I majored in Computer Science. I strive to improve my technical skills as a developer and deepen my knowledge about various technologies.",
 
@@ -103,7 +104,11 @@ const content = {
       name: 'LinkedIn',
       link: 'https://www.linkedin.com/in/lisa-duong-763b33203/',
     },
+    {
+      name: 'Figma',
+      link: '',
+    },
   ],
 };
 
-export default content;
+export default data;

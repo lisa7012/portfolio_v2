@@ -13,7 +13,7 @@
     --buttonShadowColor: #b9b0a480;
     --rectangleShadowColor: #b9b0a433;
     --buttonHoverColor: #8cd7d2a6;
-    --dottedUnderlineColor2: #fff;
+    --underlineColor2: #fff;
     --cardShadowColor: #a4867740;
 }
 
@@ -31,8 +31,13 @@ body {
 
 .App .app-body {
     margin-top: clamp(2rem, 1.0492rem + 4.2256vw, 6.12rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: clamp(3rem, 2.0769rem + 4.1026vw, 7rem);
     margin-left: clamp(1.25rem, -1.9231rem + 14.1026vw, 15rem);
     margin-right: clamp(1.25rem, -1.9231rem + 14.1026vw, 15rem);
+    margin-bottom: clamp(4.75rem, 4.2308rem + 2.3077vw, 7rem);
 }
 
 h1 {
@@ -42,6 +47,7 @@ h1 {
     font-style: normal;
     font-weight: 600;
     line-height: 100%;
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -99,7 +105,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline #fff;
+    text-decoration: underline var(--underlineColor2);
 }
 
 .dotted,
@@ -115,5 +121,22 @@ a:hover {
 }
 
 .dotted-2:hover {
-    text-decoration-color: var(--dottedUnderlineColor2);
+    text-decoration-color: var(--underlineColor2);
+}
+
+/* Scroll Styling */
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--headerColor);
+    border: 1px solid transparent;
+    border-radius: 9px;
+    background-clip: content-box;
 }
