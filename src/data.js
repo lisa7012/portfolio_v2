@@ -94,7 +94,8 @@ const data = {
         'My small personal portfolio that I designed using Figma and coded in React and CSS.',
       tech: 'React • CSS',
       link: 'https://github.com/lisa7012/portfolio_v2',
-      figma: '',
+      figma:
+        'https://www.figma.com/proto/MCCeCEj3kMWsJzoroQQQwf/portfolio_v2?type=design&node-id=1035-67&t=B4LaMejjmuvfQMms-1&scaling=min-zoom&page-id=802%3A2&mode=design',
     },
   ],
 

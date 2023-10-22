@@ -40,7 +40,7 @@ const Projects = ({ projects, github }) => {
     <div id='projects' className='projects-container'>
       <div className='p-header'>
         <h1 className='dotted dotted-2'>Projects</h1>
-        <a href={github.link}>
+        <a href={github.link} target='_blank' rel='noreferrer'>
           <button>
             <FaGithub id='github-icon' />
             {github.username}
