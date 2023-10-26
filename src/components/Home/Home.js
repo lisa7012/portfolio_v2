@@ -22,7 +22,7 @@ const Home = ({ name, intro }) => {
         </div>
       </div>
       <div className='arrow-down'>
-        <a href='/#about-me'>
+        <a href='#about-me'>
           <SlArrowDown id='arrow' />
         </a>
       </div>
