@@ -53,7 +53,7 @@ const data = {
       description:
         'A smart text editor web app that allows the user to save, group, and apply edits. Course project.',
       tech: 'HTML • CSS • JavaScript • React',
-      link: 'https://github.com/LLA-panic/panic-button',
+      link: 'https://github.com/Butterfly354/ButterflyEffectEditor',
     },
     {
       id: 3,
