@@ -4,9 +4,7 @@ It is v2 because I have coded one previously, but it never made it to production
 
 <p>&nbsp</p>
 <p align="center">
-  <a href="https://lisa7012.github.io/portfolio_v2/" target="_blank">
-    <img src="https://github.com/lisa7012/portfolio_v2/assets/71042901/bf48b764-5e9e-4cbe-97dc-b1069a41e890" width="800" alt="Portfolio preview"/>
-  </a>
+  <img src="https://github.com/lisa7012/portfolio_v2/assets/71042901/bf48b764-5e9e-4cbe-97dc-b1069a41e890" width="800" alt="Portfolio preview"/>
 </p>  
 <p>&nbsp</p>
 
