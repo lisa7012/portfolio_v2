@@ -6,7 +6,7 @@ const NavBar = ({ name }) => {
 
   return (
     <nav className='underline'>
-      <a href='/'>
+      <a href='index.html'>
         <span className='brand'>{name}.</span>
       </a>
       <div
