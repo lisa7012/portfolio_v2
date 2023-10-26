@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/portfolio_v2/static/css/main.631167e6.css",
+    "main.js": "/portfolio_v2/static/js/main.195132c1.js",
+    "static/media/Resume_Lisa_Duong.pdf": "/portfolio_v2/static/media/Resume_Lisa_Duong.5a99309dfb9f86ebb2d6.pdf",
+    "static/media/home_girl.svg": "/portfolio_v2/static/media/home_girl.1f42597ab41d1feaf4999538a3cbcb8a.svg",
+    "static/media/contact_socials.svg": "/portfolio_v2/static/media/contact_socials.53e19fd40be1db305b5659e1f077fb2a.svg",
+    "static/media/about_me.svg": "/portfolio_v2/static/media/about_me.cb8f2d266d072e237c7a16059daaa3b6.svg",
+    "static/media/slick.svg": "/portfolio_v2/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/portfolio_v2/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/portfolio_v2/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/portfolio_v2/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/portfolio_v2/index.html",
+    "main.631167e6.css.map": "/portfolio_v2/static/css/main.631167e6.css.map",
+    "main.195132c1.js.map": "/portfolio_v2/static/js/main.195132c1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.631167e6.css",
+    "static/js/main.195132c1.js"
+  ]
+}
