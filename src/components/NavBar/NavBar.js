@@ -21,13 +21,13 @@ const NavBar = ({ name }) => {
       </div>
       <ul className={isMenuClicked ? 'menu-clicked' : ''}>
         <li>
-          <a href='/#about-me'>About Me</a>
+          <a href='#about-me'>About Me</a>
         </li>
         <li>
-          <a href='/#projects'>Projects</a>
+          <a href='#projects'>Projects</a>
         </li>
         <li>
-          <a href='/#contact'>Contact</a>
+          <a href='#contact'>Contact</a>
         </li>
       </ul>
     </nav>
