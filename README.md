@@ -1,6 +1,6 @@
 # 💻 My portfolio website
 
-It is v2 because I have coded one previously, but it never made it to production since my first portfolio lacked responsiveness. Hence, I wanted to start over with a new design to include a responsive design and write in a framework that I am more proficient in compared to back then. I was able to learn more about responsive designs and improve my Figma skills from this portfolio. 😊
+It is v2 because I have coded one previously, but it never made it to production since my [first portfolio](https://github.com/lisa7012/portfolio_v1) lacked responsiveness. Hence, I wanted to start over with a new design to include a responsive design and write in a framework that I am more proficient in compared to back then. I was able to learn more about responsive designs and improve my Figma skills from this portfolio. 😊
 
 <p>&nbsp</p>
 <p align="center">
