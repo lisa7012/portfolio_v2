@@ -23,8 +23,8 @@ function App() {
         <Contact socials={data.socials} />
       </div>
       <Footer
-        figma={data.projects[6].figma}
-        github={data.projects[6].link}
+        figma={data.projects[1].figma}
+        github={data.projects[1].link}
         fullName={data.fullName}
       />
     </div>
